@@ -30,8 +30,8 @@
         {
             this.btnPressExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBoxUsername = new System.Windows.Forms.TextBox();
+            this.txtBoxPassword = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,19 +57,19 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // textBox1
+            // txtBoxUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtBoxUsername.Location = new System.Drawing.Point(106, 61);
+            this.txtBoxUsername.Name = "txtBoxUsername";
+            this.txtBoxUsername.Size = new System.Drawing.Size(182, 20);
+            this.txtBoxUsername.TabIndex = 2;
             // 
-            // textBox2
+            // txtBoxPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(106, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtBoxPassword.Location = new System.Drawing.Point(106, 97);
+            this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.Size = new System.Drawing.Size(182, 20);
+            this.txtBoxPassword.TabIndex = 3;
             // 
             // lblUsername
             // 
@@ -106,8 +106,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxPassword);
+            this.Controls.Add(this.txtBoxUsername);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnPressExit);
             this.Name = "Form1";
@@ -121,8 +121,8 @@
 
         private System.Windows.Forms.Button btnPressExit;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxUsername;
+        private System.Windows.Forms.TextBox txtBoxPassword;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label label3;
