@@ -18,10 +18,22 @@ namespace ChatMessageSystem
         }
 
 
-
         private void btnPressExit_Click(object sender, EventArgs e)
         {
-            btnPressExit.Text = "I love u";
+      
+            var result = MessageBox.Show("Are you sure you would like to exit?",  "ChatMessageSystem-Exit", MessageBoxButtons.YesNo);
+            
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            ChatBoxForm ss = new ChatBoxForm();
+            ss.Show();
+            this.Hide();
         }
     }
 }
