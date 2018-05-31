@@ -29,33 +29,130 @@
         private void InitializeComponent()
         {
             this.btnPressExit = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtBoxUsername = new System.Windows.Forms.TextBox();
+            this.txtBoxPassword = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPressExit
             // 
-            this.btnPressExit.Location = new System.Drawing.Point(186, 124);
+            this.btnPressExit.Location = new System.Drawing.Point(213, 144);
             this.btnPressExit.Name = "btnPressExit";
             this.btnPressExit.Size = new System.Drawing.Size(75, 23);
             this.btnPressExit.TabIndex = 0;
-            this.btnPressExit.Text = "button1";
+            this.btnPressExit.Text = "Exit";
             this.btnPressExit.UseVisualStyleBackColor = true;
             this.btnPressExit.Click += new System.EventHandler(this.btnPressExit_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(121, 131);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(77, 36);
+            this.btnLogin.TabIndex = 1;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // txtBoxUsername
+            // 
+            this.txtBoxUsername.Location = new System.Drawing.Point(106, 61);
+            this.txtBoxUsername.Name = "txtBoxUsername";
+            this.txtBoxUsername.Size = new System.Drawing.Size(182, 20);
+            this.txtBoxUsername.TabIndex = 2;
+            // 
+            // txtBoxPassword
+            // 
+            this.txtBoxPassword.Location = new System.Drawing.Point(106, 97);
+            this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.Size = new System.Drawing.Size(182, 20);
+            this.txtBoxPassword.TabIndex = 3;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(32, 61);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(58, 13);
+            this.lblUsername.TabIndex = 4;
+            this.lblUsername.Text = "Username:";
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(32, 97);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(56, 13);
+            this.lblPassword.TabIndex = 5;
+            this.lblPassword.Text = "Password:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(66, -1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(290, 62);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Welcome to\r\nChatMessageSystem\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(332, 131);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Register";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(332, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 526);
+            this.ClientSize = new System.Drawing.Size(430, 187);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.txtBoxPassword);
+            this.Controls.Add(this.txtBoxUsername);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnPressExit);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Login-ChatMessageSystem";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnPressExit;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txtBoxUsername;
+        private System.Windows.Forms.TextBox txtBoxPassword;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
