@@ -51,5 +51,13 @@ namespace ChatMessageSystem
             }
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreateAccount createAccount = new CreateAccount();
+            createAccount.Show();
+
+        }
     }
 }
